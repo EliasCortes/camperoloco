@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre Camperoloco: el auténtico food truck de camperos malagueños en Berlín. Reservas para eventos privados, bodas, catering y festivales.">
+  <title>Camperoloco | El auténtico Campero Malagueño en Berlín</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Navigation -->
+  <header id="nav-header">
+    <div class="nav-container">
+      <a href="#" class="nav-logo-link" id="nav-logo">
+        <img src="assets/logo.png" alt="Camperoloco Logo" class="nav-logo-img">
+        <span class="logo-text">Camperoloco</span>
+        <svg class="andalusia-flag" viewBox="0 0 9 6" width="16" height="11" xmlns="http://www.w3.org/2000/svg" title="Andalucía">
+          <rect width="9" height="6" fill="#006C35"/>
+          <rect y="2" width="9" height="2" fill="#ffffff"/>
+        </svg>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="mobile-nav-toggle" aria-label="Abrir menú" id="mobile-toggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Inicio</a>
+        <a href="#about" class="nav-link">El Concepto</a>
+        <a href="#schedule" class="nav-link">Calendario</a>
+        <a href="#menu" class="nav-link">Menú</a>
+        <a href="#opinions" class="nav-link">Opiniones</a>
+        <a href="#catering" class="nav-cta" id="cta-nav-button">¡Reserva el Truck!</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg class="andalusia-flag" viewBox="0 0 9 6" width="16" height="11" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0; margin-right: 8px;">
+          <rect width="9" height="6" fill="#006C35"/>
+          <rect y="2" width="9" height="2" fill="#ffffff"/>
+        </svg>
+        <span>Auténtico Sabor Andaluz en Berlín</span>
+      </div>
+      <h1 class="hero-title">El auténtico <span class="gradient-text">Campero Malagueño</span> llega a Alemania</h1>
+      <p class="hero-description">Crujiente por fuera, tierno por dentro y prensado a la plancha. Llevamos la esencia y el sol de Málaga directamente a las calles de Berlín.</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary" id="hero-view-menu">
+          Ver Menú
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#catering" class="btn btn-secondary" id="hero-book-truck">Reservar Catering</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Desliza para saborear</span>
+    </div>
+  </section>
+
+  <!-- The Concept (About Us) Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-container">
+          <img src="assets/campero_classic.png" alt="Campero Clásico Preparación" class="about-img">
+          <div class="about-image-tag">
+            <svg class="andalusia-flag" viewBox="0 0 9 6" width="24" height="16" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0; margin-bottom: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);">
+              <rect width="9" height="6" fill="#006C35"/>
+              <rect y="2" width="9" height="2" fill="#ffffff"/>
+            </svg>
+            <span class="tag-number">100%</span>
+            <span class="tag-label">Sabor Andaluz</span>
+          </div>
+        </div>
+        <div class="about-text-container">
+          <span class="section-subtitle">Nuestra Historia</span>
+          <h2 class="section-title">De la Costa del Sol al asfalto de Berlín</h2>
+          <p class="about-text">El campero no es solo un sándwich; es el icono indiscutible de las noches malagueñas. Pan de mollete redondo y plano, tostado y prensado al grill de forma que todo el queso se funde con los ingredientes frescos.</p>
+          <p class="about-text"><strong>Camperoloco</strong> nace del anhelo de compartir esta joya gastronómica con Berlín. Fusionamos la receta clásica de los barrios malagueños con la energía urbana alemana, usando ingredientes locales de alta calidad y salsas artesanales creadas por nosotros mismos.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🥖</div>
+              <div>
+                <h4>Pan Único</h4>
+                <p>Receta especial que queda extra crujiente en la plancha.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔥</div>
+              <div>
+                <h4>El Prensado</h4>
+                <p>Tostado bajo presión para una fusión perfecta de sabores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Schedule / Where are we Section -->
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">¿Dónde estamos esta semana?</span>
+        <h2 class="section-title">Sigue al Truck 🚚</h2>
+        <p class="section-desc">Nos movemos por los puntos más vibrantes de Berlín. Consulta el calendario diario y ven a probar el sabor original de Málaga.</p>
+      </div>
+
+      <!-- Days Switcher -->
+      <div class="schedule-tabs" id="schedule-tabs">
+        <button class="tab-btn active" data-day="lun">Lunes</button>
+        <button class="tab-btn" data-day="mar">Martes</button>
+        <button class="tab-btn" data-day="mie">Miércoles</button>
+        <button class="tab-btn" data-day="jue">Jueves</button>
+        <button class="tab-btn" data-day="vie">Viernes</button>
+        <button class="tab-btn" data-day="sab">Sábado</button>
+        <button class="tab-btn" data-day="dom">Domingo</button>
+      </div>
+
+      <!-- Schedule Display Area -->
+      <div class="schedule-display" id="schedule-display">
+        <!-- Will be populated dynamically by app.js, default state inside HTML is Monday -->
+        <div class="schedule-card">
+          <div class="schedule-card-header">
+            <span class="live-badge" id="schedule-live-badge">Abierto ahora</span>
+            <span class="day-full-name" id="schedule-day-name">Lunes</span>
+          </div>
+          <div class="schedule-card-body">
+            <div class="schedule-info">
+              <h3 class="location-title" id="schedule-location-title">Kulturbrauerei (Street Food Market)</h3>
+              <p class="location-address" id="schedule-location-address">Schönhauser Allee 36, 10435 Berlin-Prenzlauer Berg</p>
+              <div class="schedule-time">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span id="schedule-time-range">12:00h - 20:00h</span>
+              </div>
+            </div>
+            <div class="schedule-action">
+              <a href="https://maps.google.com" target="_blank" class="btn btn-primary" id="schedule-map-link">
+                Cómo llegar (Google Maps)
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Carta Camperoloco</span>
+        <h2 class="section-title">Elige tu Campero 🍔</h2>
+        <p class="section-desc">Todos nuestros camperos se preparan al momento con pan de mollete andaluz crujiente y nuestra inconfundible mayonesa secreta Camperoloco.</p>
+      </div>
+
+      <!-- Menu Category Filters -->
+      <div class="menu-filters" id="menu-filters">
+        <button class="filter-btn active" data-category="todos">Todo el Menú</button>
+        <button class="filter-btn" data-category="clasicos">Clásicos</button>
+        <button class="filter-btn" data-category="especiales">Especiales</button>
+        <button class="filter-btn" data-category="tapas-bebidas">Tapas y Bebidas</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menu-grid">
+        <!-- Populated via JavaScript dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Catering & Event Booking Form (Multi-step) -->
+  <section id="catering" class="catering-section">
+    <div class="container">
+      <div class="catering-layout">
+        <div class="catering-info-side">
+          <span class="section-subtitle">Catering y Eventos</span>
+          <h2 class="section-title">Lleva Camperoloco a tu fiesta 🎉</h2>
+          <p class="catering-text">¿Quieres dar un toque andaluz único e inolvidable a tu evento? Alquilamos nuestro food truck completo para bodas, eventos de empresa, cumpleaños y festivales en Berlín y alrededores.</p>
+          <ul class="catering-benefits">
+            <li><span>✓</span> Menús de camperos adaptados a tus invitados.</li>
+            <li><span>✓</span> Opciones vegetarianas, veganas y sin gluten.</li>
+            <li><span>✓</span> Servicio profesional, rápido y con la mejor música y vibra de Málaga.</li>
+            <li><span>✓</span> Presupuestos personalizados sin compromiso.</li>
+          </ul>
+          <div class="catering-image-badge">
+            <img src="assets/truck_hero.png" alt="Food Truck en evento" class="catering-badge-img">
+            <div class="catering-badge-overlay">
+              <span class="badge-text">Berlín & Brandenburgo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catering-form-side">
+          <div class="form-card">
+            <!-- Progress Bar -->
+            <div class="form-progress">
+              <div class="progress-step active" data-step="1">
+                <span class="step-num">1</span>
+                <span class="step-label">Contacto</span>
+              </div>
+              <div class="progress-line"></div>
+              <div class="progress-step" data-step="2">
+                <span class="step-num">2</span>
+                <span class="step-label">Evento</span>
+              </div>
+              <div class="progress-line"></div>
+              <div class="progress-step" data-step="3">
+                <span class="step-num">3</span>
+                <span class="step-label">Mensaje</span>
+              </div>
+            </div>
+
+            <!-- Booking Form -->
+            <form id="booking-form" novalidate>
+              <!-- Step 1: Contact details -->
+              <div class="form-step active" id="step-1-content">
+                <h3 class="form-step-title">Cuéntanos quién eres</h3>
+                
+                <div class="input-group">
+                  <label for="booking-name">Nombre completo *</label>
+                  <input type="text" id="booking-name" required placeholder="Ej. Carlos Gómez">
+                  <span class="error-msg" id="error-name">Por favor, introduce tu nombre</span>
+                </div>
+
+                <div class="input-group">
+                  <label for="booking-email">Correo electrónico *</label>
+                  <input type="email" id="booking-email" required placeholder="Ej. carlos@correo.com">
+                  <span class="error-msg" id="error-email">Introduce un correo electrónico válido</span>
+                </div>
+
+                <div class="input-group">
+                  <label for="booking-phone">Teléfono de contacto *</label>
+                  <input type="tel" id="booking-phone" required placeholder="Ej. +49 176 12345678">
+                  <span class="error-msg" id="error-phone">Introduce tu número de teléfono</span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="button" class="btn btn-primary btn-next" id="btn-to-step-2">Siguiente Paso</button>
+                </div>
+              </div>
+
+              <!-- Step 2: Event details -->
+              <div class="form-step" id="step-2-content">
+                <h3 class="form-step-title">Detalles del Evento</h3>
+
+                <div class="input-row">
+                  <div class="input-group">
+                    <label for="booking-date">Fecha del evento *</label>
+                    <input type="date" id="booking-date" required>
+                    <span class="error-msg" id="error-date">Selecciona una fecha válida</span>
+                  </div>
+                  
+                  <div class="input-group">
+                    <label for="booking-type">Tipo de evento *</label>
+                    <select id="booking-type" required>
+                      <option value="" disabled selected>Selecciona una opción</option>
+                      <option value="corporativo">Evento de Empresa</option>
+                      <option value="boda">Boda</option>
+                      <option value="privado">Fiesta Privada</option>
+                      <option value="festival">Festival o Público</option>
+                    </select>
+                    <span class="error-msg" id="error-type">Selecciona el tipo de evento</span>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="booking-guests">Número estimado de invitados: <span id="guests-val">150</span> personas</label>
+                  <input type="range" id="booking-guests" min="30" max="500" step="10" value="150">
+                  <div class="range-labels">
+                    <span>30 pers.</span>
+                    <span>250 pers.</span>
+                    <span>500+ pers.</span>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="booking-location">Ubicación del evento (Ciudad/Zona) *</label>
+                  <input type="text" id="booking-location" required placeholder="Ej. Friedrichshain, Berlín">
+                  <span class="error-msg" id="error-location">Especifica el lugar del evento</span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="button" class="btn btn-secondary btn-prev" id="btn-back-to-step-1">Atrás</button>
+                  <button type="button" class="btn btn-primary btn-next" id="btn-to-step-3">Siguiente Paso</button>
+                </div>
+              </div>
+
+              <!-- Step 3: Message & Submit -->
+              <div class="form-step" id="step-3-content">
+                <h3 class="form-step-title">Notas adicionales</h3>
+
+                <div class="input-group">
+                  <label for="booking-message">Cuéntanos más (detalles del menú, alergias, requerimientos de espacio, etc.)</label>
+                  <textarea id="booking-message" rows="5" placeholder="¿Tienes alguna preferencia en especial? Cuéntanos aquí..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="button" class="btn btn-secondary btn-prev" id="btn-back-to-step-2">Atrás</button>
+                  <button type="submit" class="btn btn-primary" id="btn-submit-booking">Enviar Solicitud</button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Success Screen -->
+            <div class="form-success-message" id="form-success">
+              <div class="success-icon">✓</div>
+              <h3>¡Solicitud Recibida!</h3>
+              <p>Tu mensaje de reserva se ha registrado con éxito en nuestro sistema de catering.</p>
+              <div class="summary-box" id="booking-summary-box">
+                <!-- Summary inserted via JS -->
+              </div>
+              <p class="success-note">Te responderemos con una propuesta personalizada en menos de 24 horas.</p>
+              <button class="btn btn-secondary" id="btn-reset-form">Hacer otra reserva</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews & Testimonials Section -->
+  <section id="opinions" class="opinions-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Campero Lovers</span>
+        <h2 class="section-title">Lo que dicen de nosotros ⭐</h2>
+        <p class="section-desc">Nuestra mayor recompensa es ver a malagueños nostálgicos y berlineses sorprendidos disfrutando de la misma experiencia.</p>
+      </div>
+
+      <!-- Testimonials Carousel -->
+      <div class="testimonials-container">
+        <div class="testimonials-slider" id="testimonials-slider">
+          
+          <div class="testimonial-card">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="comment">"¡Increíble! Hacía años que no comía un campero de verdad y este sabe exactamente igual que los de mi barrio en Málaga. El pan está perfectamente crujiente. ¡Volveré todas las semanas!"</p>
+            <div class="author">
+              <div class="avatar">👨‍🍳</div>
+              <div>
+                <h4 class="name">Alejandro Ramos</h4>
+                <p class="role">Cliente verificado (Málaga en Berlín)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="comment">"We booked the Camperoloco food truck for our summer wedding in Brandenburg. It was an absolute hit! All the German guests loved the concept, and the staff was extremely friendly and fast."</p>
+            <div class="author">
+              <div class="avatar">👰</div>
+              <div>
+                <h4 class="name">Sarah & Max</h4>
+                <p class="role">Evento privado en Julio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="comment">"Ich kannte Camperos vorher nicht, aber es ist fantastisch. Knuspriges Brot mit schmelzendem Käse und einer fantastischen Sauce. Eine Bereicherung für das Berliner Street-Food!"</p>
+            <div class="author">
+              <div class="avatar">🍔</div>
+              <div>
+                <h4 class="name">Lukas Weber</h4>
+                <p class="role">Berliner Foodie</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider controls -->
+        <div class="slider-controls">
+          <button class="control-btn prev-btn" id="prev-review" aria-label="Reseña anterior">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="slider-dots" id="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="control-btn next-btn" id="next-review" aria-label="Siguiente reseña">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col branding-col">
+          <a href="#" class="footer-logo">
+            <img src="assets/logo.png" alt="Camperoloco Logo" class="footer-logo-img">
+            <span>Camperoloco</span>
+            <svg class="andalusia-flag" viewBox="0 0 9 6" width="16" height="11" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9" height="6" fill="#006C35"/>
+              <rect y="2" width="9" height="2" fill="#ffffff"/>
+            </svg>
+          </a>
+          <p class="footer-tagline">Llevando el sabor, el sol y el espíritu de Málaga al corazón de Berlín.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-link-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="social-link-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+            </a>
+            <a href="https://google.com/maps" target="_blank" aria-label="Google Maps" class="social-link-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col links-col">
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">El Concepto</a></li>
+            <li><a href="#schedule">Ubicaciones</a></li>
+            <li><a href="#menu">La Carta</a></li>
+            <li><a href="#catering">Catering & Eventos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h3>Contacto</h3>
+          <p>📍 Berlín, Alemania</p>
+          <p>📞 <a href="tel:+4917612345678" class="contact-link">+49 176 12345678</a></p>
+          <p>✉️ <a href="mailto:hola@camperoloco.de" class="contact-link">hola@camperoloco.de</a></p>
+        </div>
+
+        <div class="footer-col newsletter-col">
+          <h3>El Club del Campero</h3>
+          <p>Apúntate a nuestra newsletter para recibir descuentos y enterarte de ubicaciones sorpresa.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Tu correo electrónico" required id="newsletter-email">
+            <button type="submit" aria-label="Suscribirse">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+          <div class="newsletter-success" id="newsletter-success">¡Ya estás en el club! 🥖✨</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Camperoloco. Todos los derechos reservados.</p>
+        <div class="legal-links">
+          <a href="#" id="impressum-link">Impressum</a>
+          <a href="#" id="datenschutz-link">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Food Customizer Modal -->
+  <div class="modal" id="food-modal">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-body-grid" id="modal-body-grid">
+        <!-- Filled dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
