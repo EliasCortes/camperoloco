@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Form Submit Handler
-  bookingForm.addEventListener('submit', (e) => {
+  bookingForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     if (validateCurrentStep()) {
@@ -589,16 +589,30 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="summary-item"><span>Ubicación:</span> <span>${location}</span></div>
       `;
 
-      // Log results to console (simulating save to CRM)
-      console.log('--- NUEVA RESERVA DE CATERING REGISTRADA (CAMPEROLOCO CRM) ---');
-      console.log({ name, email, phone, date, eventType: typeText, guests, location, message });
+      // Submit to Formspree
+      try {
+        const formData = new FormData(bookingForm);
+        const response = await fetch(bookingForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
 
-      // Hide form steps progress & form itself
-      document.querySelector('.form-progress').style.display = 'none';
-      bookingForm.style.display = 'none';
-      
-      // Show Success screen
-      formSuccess.classList.add('active');
+        if (response.ok) {
+          // Hide form steps progress & form itself
+          document.querySelector('.form-progress').style.display = 'none';
+          bookingForm.style.display = 'none';
+          
+          // Show Success screen
+          formSuccess.classList.add('active');
+        } else {
+          alert("Hubo un problema enviando tu solicitud. Por favor, inténtalo de nuevo.");
+        }
+      } catch (error) {
+        alert("Error de conexión al enviar el formulario. Por favor, inténtalo de nuevo más tarde.");
+      }
     }
   });
 

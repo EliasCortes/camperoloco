@@ -399,26 +399,26 @@ button {
   animation: fadeInUp 0.8s ease-out;
 }
 
-.hero-badge {
-  background: rgba(255, 92, 43, 0.15);
-  border: 1px solid rgba(255, 92, 43, 0.3);
-  color: var(--accent-orange);
-  padding: 0.5rem 1.25rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+.hero-subtitle {
+  display: block;
   font-family: var(--font-title);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-  border-radius: 50px;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: #006C35;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
-.badge-icon {
-  width: 16px;
-  height: 16px;
+.hero-subtitle::before, .hero-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #006C35;
+  vertical-align: middle;
+  margin: 0 15px;
 }
 
 .hero-title {
@@ -1401,6 +1401,20 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 .rating {
   font-size: 1.1rem;
+}
+
+.social-tag {
+  display: inline-block;
+  background: rgba(0, 108, 53, 0.1);
+  color: #006C35;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+  border: 1px solid rgba(0, 108, 53, 0.2);
 }
 
 .comment {

@@ -20,10 +20,6 @@
       <a href="#" class="nav-logo-link" id="nav-logo">
         <img src="assets/logo.png" alt="Camperoloco Logo" class="nav-logo-img">
         <span class="logo-text">Camperoloco</span>
-        <svg class="andalusia-flag" viewBox="0 0 9 6" width="16" height="11" xmlns="http://www.w3.org/2000/svg" title="Andalucía">
-          <rect width="9" height="6" fill="#006C35"/>
-          <rect y="2" width="9" height="2" fill="#ffffff"/>
-        </svg>
       </a>
       
       <!-- Hamburger Menu for Mobile -->
@@ -46,13 +42,7 @@
   <section id="home" class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-badge">
-        <svg class="andalusia-flag" viewBox="0 0 9 6" width="16" height="11" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0; margin-right: 8px;">
-          <rect width="9" height="6" fill="#006C35"/>
-          <rect y="2" width="9" height="2" fill="#ffffff"/>
-        </svg>
-        <span>Auténtico Sabor Andaluz en Berlín</span>
-      </div>
+      <span class="hero-subtitle">Auténtico Sabor Andaluz en Berlín</span>
       <h1 class="hero-title">El auténtico <span class="gradient-text">Campero Malagueño</span> llega a Alemania</h1>
       <p class="hero-description">Crujiente por fuera, tierno por dentro y prensado a la plancha. Llevamos la esencia y el sol de Málaga directamente a las calles de Berlín.</p>
       <div class="hero-ctas">
@@ -229,26 +219,26 @@
             </div>
 
             <!-- Booking Form -->
-            <form id="booking-form" novalidate>
+            <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
               <!-- Step 1: Contact details -->
               <div class="form-step active" id="step-1-content">
                 <h3 class="form-step-title">Cuéntanos quién eres</h3>
                 
                 <div class="input-group">
                   <label for="booking-name">Nombre completo *</label>
-                  <input type="text" id="booking-name" required placeholder="Ej. Carlos Gómez">
+                  <input type="text" id="booking-name" name="name" required placeholder="Ej. Carlos Gómez">
                   <span class="error-msg" id="error-name">Por favor, introduce tu nombre</span>
                 </div>
 
                 <div class="input-group">
                   <label for="booking-email">Correo electrónico *</label>
-                  <input type="email" id="booking-email" required placeholder="Ej. carlos@correo.com">
+                  <input type="email" id="booking-email" name="email" required placeholder="Ej. carlos@correo.com">
                   <span class="error-msg" id="error-email">Introduce un correo electrónico válido</span>
                 </div>
 
                 <div class="input-group">
                   <label for="booking-phone">Teléfono de contacto *</label>
-                  <input type="tel" id="booking-phone" required placeholder="Ej. +49 176 12345678">
+                  <input type="tel" id="booking-phone" name="phone" required placeholder="Ej. +49 176 12345678">
                   <span class="error-msg" id="error-phone">Introduce tu número de teléfono</span>
                 </div>
 
@@ -264,13 +254,13 @@
                 <div class="input-row">
                   <div class="input-group">
                     <label for="booking-date">Fecha del evento *</label>
-                    <input type="date" id="booking-date" required>
+                    <input type="date" id="booking-date" name="date" required>
                     <span class="error-msg" id="error-date">Selecciona una fecha válida</span>
                   </div>
                   
                   <div class="input-group">
                     <label for="booking-type">Tipo de evento *</label>
-                    <select id="booking-type" required>
+                    <select id="booking-type" name="event_type" required>
                       <option value="" disabled selected>Selecciona una opción</option>
                       <option value="corporativo">Evento de Empresa</option>
                       <option value="boda">Boda</option>
@@ -283,7 +273,7 @@
 
                 <div class="input-group">
                   <label for="booking-guests">Número estimado de invitados: <span id="guests-val">150</span> personas</label>
-                  <input type="range" id="booking-guests" min="30" max="500" step="10" value="150">
+                  <input type="range" id="booking-guests" name="guests" min="30" max="500" step="10" value="150">
                   <div class="range-labels">
                     <span>30 pers.</span>
                     <span>250 pers.</span>
@@ -293,7 +283,7 @@
 
                 <div class="input-group">
                   <label for="booking-location">Ubicación del evento (Ciudad/Zona) *</label>
-                  <input type="text" id="booking-location" required placeholder="Ej. Friedrichshain, Berlín">
+                  <input type="text" id="booking-location" name="location" required placeholder="Ej. Friedrichshain, Berlín">
                   <span class="error-msg" id="error-location">Especifica el lugar del evento</span>
                 </div>
 
@@ -309,7 +299,7 @@
 
                 <div class="input-group">
                   <label for="booking-message">Cuéntanos más (detalles del menú, alergias, requerimientos de espacio, etc.)</label>
-                  <textarea id="booking-message" rows="5" placeholder="¿Tienes alguna preferencia en especial? Cuéntanos aquí..."></textarea>
+                  <textarea id="booking-message" name="message" rows="5" placeholder="¿Tienes alguna preferencia en especial? Cuéntanos aquí..."></textarea>
                 </div>
 
                 <div class="form-actions">
@@ -351,36 +341,39 @@
         <div class="testimonials-slider" id="testimonials-slider">
           
           <div class="testimonial-card">
+            <div class="social-tag">Vía Instagram</div>
             <div class="rating">⭐⭐⭐⭐⭐</div>
             <p class="comment">"¡Increíble! Hacía años que no comía un campero de verdad y este sabe exactamente igual que los de mi barrio en Málaga. El pan está perfectamente crujiente. ¡Volveré todas las semanas!"</p>
             <div class="author">
-              <div class="avatar">👨‍🍳</div>
+              <div class="avatar">AR</div>
               <div>
-                <h4 class="name">Alejandro Ramos</h4>
-                <p class="role">Cliente verificado (Málaga en Berlín)</p>
+                <h4 class="name">@alexramos_berlin</h4>
+                <p class="role">Málaga en Berlín</p>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
+            <div class="social-tag">Vía Facebook</div>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <p class="comment">"We booked the Camperoloco food truck for our summer wedding in Brandenburg. It was an absolute hit! All the German guests loved the concept, and the staff was extremely friendly and fast."</p>
+            <p class="comment">"Probamos El Campero de Pollo y las Patatas Bravas en el mercado de Mauerpark y fue un acierto total. Sabor auténtico y el personal súper majo. Totalmente recomendado."</p>
             <div class="author">
-              <div class="avatar">👰</div>
+              <div class="avatar">LM</div>
               <div>
-                <h4 class="name">Sarah & Max</h4>
-                <p class="role">Evento privado en Julio</p>
+                <h4 class="name">Laura Martínez</h4>
+                <p class="role">Reseña en Facebook</p>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
+            <div class="social-tag">Vía Instagram</div>
             <div class="rating">⭐⭐⭐⭐⭐</div>
             <p class="comment">"Ich kannte Camperos vorher nicht, aber es ist fantastisch. Knuspriges Brot mit schmelzendem Käse und einer fantastischen Sauce. Eine Bereicherung für das Berliner Street-Food!"</p>
             <div class="author">
-              <div class="avatar">🍔</div>
+              <div class="avatar">LW</div>
               <div>
-                <h4 class="name">Lukas Weber</h4>
+                <h4 class="name">@lweber_foodie</h4>
                 <p class="role">Berliner Foodie</p>
               </div>
             </div>
@@ -402,6 +395,21 @@
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </button>
         </div>
+        
+        <!-- Social Reviews CTA & Future Google Reviews Widget -->
+        <div class="reviews-cta" style="text-align: center; margin-top: 4rem;">
+          <h3 style="margin-bottom: 1rem; color: var(--text-white); font-family: var(--font-title);">¿Has probado nuestros camperos?</h3>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Etiquétanos en tus fotos y vídeos para aparecer aquí.</p>
+          <a href="https://instagram.com/camperoloco" target="_blank" class="btn btn-secondary">Déjanos tu opinión en Instagram</a>
+          
+          <!-- FUTURO WIDGET GOOGLE REVIEWS -->
+          <!-- 
+          <div id="google-reviews-widget" class="google-reviews" style="margin-top: 3rem;">
+             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+             <div class="elfsight-app-TU-ID-AQUI"></div>
+          </div>
+          -->
+        </div>
       </div>
     </div>
   </section>
@@ -414,10 +422,6 @@
           <a href="#" class="footer-logo">
             <img src="assets/logo.png" alt="Camperoloco Logo" class="footer-logo-img">
             <span>Camperoloco</span>
-            <svg class="andalusia-flag" viewBox="0 0 9 6" width="16" height="11" xmlns="http://www.w3.org/2000/svg">
-              <rect width="9" height="6" fill="#006C35"/>
-              <rect y="2" width="9" height="2" fill="#ffffff"/>
-            </svg>
           </a>
           <p class="footer-tagline">Llevando el sabor, el sol y el espíritu de Málaga al corazón de Berlín.</p>
           <div class="social-links">
