@@ -216,7 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
       price: '7.80€',
       category: 'clasicos',
       description: 'El campero tradicional de Málaga. Pan de mollete redondo tostado e ingredientes de primera calidad fundidos al grill.',
-      image: 'assets/campero_classic.png',
+      image: 'assets/Campero.jpeg',
+      hoverImage: 'assets/Campero 2.jpeg',
       allergens: ['G', 'L', 'H'],
       isVegetarian: false,
       tag: 'Más Vendido',
@@ -230,69 +231,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      id: 'campero-pollo',
-      name: 'El Campero de Pollo',
-      price: '8.90€',
-      category: 'especiales',
-      description: 'Pollo deshilachado súper jugoso hecho a fuego lento, tocino ahumado crujiente, huevo de granja a la plancha, lechuga, tomate y mayonesa Camperoloco.',
-      image: 'assets/campero_chicken.png',
-      allergens: ['G', 'L', 'H'],
-      isVegetarian: false,
-      tag: 'Especialidad',
-      ingredients: [
-        { name: 'Pan Mollete', icon: '🥖' },
-        { name: 'Pollo Deshil.', icon: '🍗' },
-        { name: 'Bacon Ahumado', icon: '🥓' },
-        { name: 'Huevo Plancha', icon: '🍳' },
-        { name: 'Queso Edam', icon: '🧀' },
-        { name: 'Mayonesa', icon: '🥚' }
-      ]
-    },
-    {
-      id: 'campero-loco',
-      name: 'El Campero "Loco"',
-      price: '9.80€',
-      category: 'especiales',
-      description: 'Una fusión berlinesa-andaluza. Finas láminas de carne de ternera adobada, cebolla roja caramelizada al Jerez, pimientos verdes fritos, queso de cabra fundido y alioli artesano de romero.',
-      image: 'assets/truck_hero.png',
-      allergens: ['G', 'L', 'H'],
-      isVegetarian: false,
-      tag: 'Exclusivo',
-      ingredients: [
-        { name: 'Pan Mollete', icon: '🥖' },
-        { name: 'Carne Adobada', icon: '🥩' },
-        { name: 'Cebolla Jerez', icon: '🧅' },
-        { name: 'Pimientos Fritos', icon: '🫑' },
-        { name: 'Queso Cabra', icon: '🧀' },
-        { name: 'Alioli Romero', icon: '🧄' }
-      ]
-    },
-    {
-      id: 'campero-veggie',
-      name: 'El Campero Veggie',
-      price: '8.80€',
-      category: 'especiales',
-      description: 'El clásico reinventado sin carne. Filete crujiente de proteína vegetal (Heura), aguacate fresco machacado, queso vegano fundido, pimiento rojo asado al carbón y mayonesa vegana casera.',
-      image: 'assets/campero_classic.png',
-      allergens: ['G', 'S'],
-      isVegetarian: true,
-      tag: 'Veggie',
-      ingredients: [
-        { name: 'Pan Mollete', icon: '🥖' },
-        { name: 'Proteína Veg', icon: '🌱' },
-        { name: 'Aguacate', icon: '🥑' },
-        { name: 'Pimiento Rojo', icon: '🌶️' },
-        { name: 'Queso Vegano', icon: '🧀' },
-        { name: 'Mayo Vegana', icon: '🍶' }
-      ]
-    },
-    {
       id: 'patatas-bravas',
       name: 'Patatas Bravas Locas',
       price: '4.80€',
       category: 'tapas-bebidas',
       description: 'Patatas gajo rústicas cortadas a mano, crujientes por fuera y cremosas por dentro, con salsa brava Camperoloco (picante andaluz) y alioli de ajo asado.',
-      image: 'assets/campero_chicken.png',
+      image: 'assets/patatas bravas.jpeg',
       allergens: ['H'],
       isVegetarian: true,
       tag: 'Acompañante',
@@ -303,19 +247,32 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      id: 'cerveza-victoria',
-      name: 'Cerveza Victoria Málaga',
-      price: '3.20€',
+      id: 'datiles-bacon',
+      name: 'Dátiles con Bacón',
+      price: '5.50€',
       category: 'tapas-bebidas',
-      description: 'Cerveza lager malagueña fresca, suave y ligera. Ideal para acompañar tus camperos bajo el cielo de Berlín.',
-      image: 'assets/logo.png',
-      allergens: ['G'],
-      isVegetarian: true,
-      tag: 'Exquisita',
+      description: 'Dátiles dulces envueltos en crujiente bacón ahumado, una combinación perfecta de dulce y salado.',
+      image: 'assets/Datiles.jpeg',
+      allergens: [],
+      isVegetarian: false,
+      tag: 'Tapa',
       ingredients: [
-        { name: 'Agua', icon: '💧' },
-        { name: 'Malta Cebada', icon: '🌾' },
-        { name: 'Lúpulo', icon: '🌿' }
+        { name: 'Dátiles', icon: '🌴' },
+        { name: 'Bacón Ahumado', icon: '🥓' }
+      ]
+    },
+    {
+      id: 'mix-tapas',
+      name: 'Mix de Tapas',
+      price: '12.00€',
+      category: 'tapas-bebidas',
+      description: 'Una selección de nuestras mejores tapas para compartir, incluyendo patatas y especialidades de la casa.',
+      image: 'assets/Mix.jpeg',
+      allergens: ['G', 'L', 'H'],
+      isVegetarian: false,
+      tag: 'Para Compartir',
+      ingredients: [
+        { name: 'Surtido Tapas', icon: '🧆' }
       ]
     }
   ];
@@ -343,7 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
       card.innerHTML = `
         <div class="menu-item-image">
-          <img src="${item.image}" alt="${item.name}" class="menu-item-img">
+          <img src="${item.image}" alt="${item.name}" class="menu-item-img ${item.hoverImage ? 'has-hover' : ''}">
+          ${item.hoverImage ? `<img src="${item.hoverImage}" alt="${item.name} Hover" class="menu-item-img-hover">` : ''}
           ${veggieBadge}
           ${specialBadge}
         </div>
