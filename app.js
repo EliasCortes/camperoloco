@@ -308,7 +308,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="menu-item-content">
           <div class="menu-item-header">
             <h3 class="menu-item-title">${item.name}</h3>
-            <span class="menu-item-price">${item.price}</span>
           </div>
           <p class="menu-item-desc">${item.description}</p>
           <div class="menu-item-footer">
@@ -383,7 +382,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div class="modal-text-side">
         <h3 class="modal-title">${item.name}</h3>
-        <div class="modal-price">${item.price}</div>
         <p class="modal-desc">${item.description} ${veggieLabel}</p>
         <div class="ingredients-details">
           <h4>¿Qué lleva? (Ingredientes)</h4>
